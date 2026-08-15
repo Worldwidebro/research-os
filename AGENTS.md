@@ -2,7 +2,7 @@
 
 ## Mission
 
-Build and maintain a continuously improving research knowledge system based on evidence, provenance, reproducibility, and explicit uncertainty.
+Build and maintain a continuously improving research knowledge system across all ventures, tools, and domains. This is the single source of truth for VEX, Obsidian, Apple Notes, Notebook LM, and all Worldwidebro ventures.
 
 ## Core Rule
 
@@ -17,8 +17,21 @@ Protocols: /protocols/
 Agents: /agents/
 Evaluation: /evaluations/
 
+## Integrated Systems
+
+- VEX: Public brand site and venture registry
+- Obsidian: Human research interface
+- Apple Notes: Mobile capture and quick notes
+- Notebook LM: Document analysis and synthesis
+- Neo4j: Relationship and reasoning layer
+- Qdrant: Semantic retrieval
+- PostgreSQL: Structured data
+- Git: Version and provenance
+
 ## Research Domains
 
-- EDU-CORE: Education research, learning sciences, pedagogy
-- LT-005: Logistics operations and optimization
+- VEX-CORE: Worldwidebro brand, ventures, ecosystem
+- EDU: Education research, learning sciences, pedagogy
 - AI-AGENTS: Autonomous agents, memory, planning
+- LOGISTICS: Operations and optimization
+- All venture domains from repo-index.csv
