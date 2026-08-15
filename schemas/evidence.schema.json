@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Evidence",
+  "type": "object",
+  "required": ["id", "type", "claim_supported", "evidence", "strength", "reliability", "source"],
+  "properties": {
+    "id": {"type": "string"},
+    "type": {"type": "string", "const": "evidence"},
+    "claim_supported": {"type": "string"},
+    "source": {"type": "string"},
+    "location": {"type": "string"},
+    "evidence": {"type": "string"},
+    "evidence_type": {"type": "string", "enum": ["direct", "indirect", "quantitative", "qualitative", "experimental", "observational", "historical", "anecdotal", "primary", "secondary"]},
+    "strength": {"type": "string", "enum": ["strong", "moderate", "weak"]},
+    "reliability": {"type": "string", "enum": ["high", "medium", "low"]},
+    "contradicting_evidence": {"type": "string"},
+    "researcher_interpretation": {"type": "string"}
+  }
+}

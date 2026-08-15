@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Experiment",
+  "type": "object",
+  "required": ["id", "type", "question", "hypothesis", "status", "created"],
+  "properties": {
+    "id": {"type": "string"},
+    "type": {"type": "string", "const": "experiment"},
+    "question": {"type": "string"},
+    "hypothesis": {"type": "string"},
+    "objective": {"type": "string"},
+    "variables": {"type": "object"},
+    "baseline": {"type": "string"},
+    "method": {"type": "string"},
+    "parameters": {"type": "object"},
+    "results": {"type": "string"},
+    "unexpected_results": {"type": "string"},
+    "errors": {"type": "string"},
+    "conclusion": {"type": "string"},
+    "next_experiment": {"type": "string"},
+    "status": {"type": "string", "enum": ["planned", "running", "completed", "failed", "replicated"]},
+    "created": {"type": "string", "format": "date"}
+  }
+}

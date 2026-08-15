@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Hypothesis",
+  "type": "object",
+  "required": ["id", "type", "statement", "status", "created"],
+  "properties": {
+    "id": {"type": "string"},
+    "type": {"type": "string", "const": "hypothesis"},
+    "statement": {"type": "string"},
+    "mechanism": {"type": "string"},
+    "prediction": {"type": "array", "items": {"type": "string"}},
+    "falsification_criteria": {"type": "string"},
+    "experiment": {"type": "string"},
+    "status": {"type": "string", "enum": ["proposed", "testing", "supported", "rejected", "revised"]},
+    "created": {"type": "string", "format": "date"}
+  }
+}
