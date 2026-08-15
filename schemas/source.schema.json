@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Source",
+  "type": "object",
+  "required": ["id", "type", "title"],
+  "properties": {
+    "id": {"type": "string"},
+    "type": {"type": "string", "enum": ["paper", "book", "dataset", "article", "report"]},
+    "title": {"type": "string"},
+    "authors": {"type": "array", "items": {"type": "string"}},
+    "year": {"type": "integer"},
+    "doi": {"type": "string"},
+    "url": {"type": "string"},
+    "domain": {"type": "string"}
+  }
+}

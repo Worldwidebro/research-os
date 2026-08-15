@@ -1,0 +1,20 @@
+# Large binaries
+*.pdf
+*.zip
+*.tar.gz
+data/raw/*
+!data/raw/.gitkeep
+data/external/*
+!data/external/.gitkeep
+*.mp4
+*.avi
+model-weights/*
+embeddings/*
+cache/
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+node_modules/
+.env
+*.pyc
+.DS_Store
